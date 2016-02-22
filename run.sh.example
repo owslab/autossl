@@ -1,0 +1,5 @@
+export CF_EMAIL='EMAIL'
+export CF_KEY='KEY'
+echo "\n\nChecking for new ssl $(date +'%m/%d/%Y %T')\n" >> /var/log/autossl.log
+cd /opt/autossl/letsencrypt.sh
+./letsencrypt.sh -c >> /var/log/autossl.log
