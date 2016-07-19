@@ -50,6 +50,7 @@ function deploy_cert {
     #   The path of the file containing the full certificate chain.
     # - CHAINFILE
     #   The path of the file containing the intermediate certificate(s).
+    chmod -R 755 /opt/autossl/letsencrypt.sh/certs
     service nginx reload
 }
 
